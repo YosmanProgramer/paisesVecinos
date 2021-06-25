@@ -20,7 +20,7 @@ const renderCountry = function (pais, className = '') {
           pais.population > 1000000
             ? (+pais.population / 1000000).toFixed(1) + 'M'
             : +pais.population / 1000 + 'K'
-        } people</p>
+        } personas</p>
         <p class="country__row"><span>🗣️</span>${
           pais.languages[0].nativeName
         }</p>

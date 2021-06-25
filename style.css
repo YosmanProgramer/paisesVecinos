@@ -84,14 +84,18 @@ main .container {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10rem;
+  }
+}
+
 .country {
   background-color: #fff;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
-  width: 30rem;
   border-radius: 0.7rem;
-  margin: 0 3rem;
-  /* overflow: hidden; */
 }
 
 .neighbour::before {
@@ -115,14 +119,17 @@ main .container {
 @media only screen and (max-width: 56.25em) {
   .neighbour {
     transform: scale(0.9) translateY(2rem);
-    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .neighbour {
+    transform: scale(1) translateY(0);
   }
 }
 
 .country__img {
-  width: 30rem;
-  height: 17rem;
-  object-fit: cover;
+  width: 100%;  
   background-color: #eee;
   border-top-left-radius: 0.7rem;
   border-top-right-radius: 0.7rem;
